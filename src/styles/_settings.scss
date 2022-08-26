@@ -1,0 +1,146 @@
+$blue : rgb(19, 60, 120);
+$blue2 :rgb(36, 140, 220);
+$blue3 :rgb(131, 201, 255);
+$gray :rgba(50, 91, 117, 0.724);
+$green :rgba(13, 102, 103, 1);
+$bg-green: rgba(49, 195, 163, 0.318);
+$blue-bg : rgb(14, 42, 71);
+$orange : rgb(255, 191, 63);
+$white : #c5d9ee;
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.05em;
+    color: rgb(39, 39, 39);
+
+    background: url("./assets/bg.svg");
+    background-size: cover ;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 2.3em;
+    letter-spacing: 0.1em;
+}
+
+h2 {
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+button, .btn {
+    color: $blue;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 30px;
+    padding: 15px 12px;
+    font-size: inherit;
+    font-family: inherit;
+    box-shadow: rgba(80, 80, 80, 0.609) 2px 2px 3px;
+    margin: 10px;
+
+    &:hover {
+        border: $blue2 solid 1px;
+        color: $blue2;
+        cursor: pointer;
+        background: rgb(236, 245, 255);
+    }
+    
+    &.active {
+        background: $blue2;
+        color: white;
+        border-color: $blue2;
+    }
+
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    
+    & button {
+        width: 100px;
+    }
+}
+
+input, textarea {
+    font-size: inherit;
+    font-family: inherit;
+    outline: none;
+    border: 1px solid rgb(189, 189, 189);
+    padding: 7px;
+    border-radius: 7px;
+    color: rgb(85, 85, 85);
+
+    &:focus {
+        box-shadow: 0px 0px 5px rgb(16, 156, 231);
+    }
+}
+
+.checkbox {
+    width: 45px;
+    height: 20px;
+    border-radius: 30px;
+    border: rgba(128, 128, 128, 0.652) 1px solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow-y: hidden;
+
+    & .elem {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        transform: translateX(-22px);
+        transition: all 0.3s;
+
+        & .circle{
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 1px solid grey;
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        & .rec {
+            width: 50px;
+            height: 20px;
+            position: absolute;
+            background: #93dbff;
+            background: $orange;
+            background: $blue3;
+            left: -40px;
+        }
+    }
+
+    &--active {
+        & .elem {
+            transform: translateX(0);
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    h2 {
+        font-size: 1.7em;
+    }
+}

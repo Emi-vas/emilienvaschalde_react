@@ -1,0 +1,23 @@
+@import "./video";
+@import "./dayPicture";
+@import "./fireballs";
+@import "./mars";
+
+
+
+
+.nasa_filter {
+    color: white;
+    display: flex;
+    justify-content: center;
+    & .year {
+        text-align: center;
+        input {
+            width: 300px;
+        }
+        p {
+            margin: 0;
+            font-size: 5em;
+        }
+    }
+}

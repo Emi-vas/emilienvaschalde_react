@@ -1,0 +1,492 @@
+.head {
+    background: #c5d9ee;
+    padding-top: 20px;
+    margin-bottom: 300px;
+    h1 {
+        color: rgb(35, 101, 148);
+        font-size: 3.3em;
+    }
+    h2 {
+        color: rgb(82, 131, 166);
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    & .bottom {
+        position: relative;
+
+        img {
+            position: absolute;
+            width: 100%;
+        }
+        img:last-of-type {
+            top: -3px;
+        }
+    }
+}
+@media screen and (max-width: 1100px) {
+    .head {
+        margin-bottom: 150px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .head {
+        font-size: 0.8em;
+        h1 {
+            font-size: 2.7em;
+        }
+        h2 {
+            font-size: 1.2em;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    .photo_profile {
+        background: #c5d9ee;
+        border-radius: 54% 46% 78% 22% / 50% 47% 53% 50% ;
+        overflow: hidden;
+        animation: photoProfile 5s alternate infinite linear;
+
+        img {
+            width: 350px;
+            position: relative;
+            bottom: -5px;
+        }
+    }
+
+    p {
+        color: $white;
+        font-size: 1.5em;
+        text-align: center;
+        background: rgb(14, 42, 71, 0.9);
+        span {
+            color: $blue3;
+            font-size: 1.8em;
+        }
+    }
+
+    @keyframes photoProfile {
+        to {
+            border-radius: 54% 46% 36% 64% / 62% 20% 80% 38% ;
+        }
+    }
+}
+@media screen and (max-width: 1600px) {
+    .section1 {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .section1 {
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .section1 {
+       flex-direction: column;
+    }
+}
+@media screen and (max-width: 700px) {
+    .section1 {
+        font-size: 0.7em;
+        .photo_profile {
+            img {
+                width: 250px;
+            }
+        }
+    }
+}
+
+
+.language {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 900px;
+    margin: auto;
+    background: $gray;
+    //background: rgb(14, 42, 71);
+    border-radius: 500px;
+   // border: 1px solid $orange;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 100%;
+    }
+
+    & .ball {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+
+        &-1 {
+            background: rgb(255, 186, 241);
+            box-shadow: 0px 0px 10px rgb(255, 196, 245);
+            transform: translate(-12px, -15px);
+            animation: ball1 infinite 5s;
+        }
+        &-2 {
+            background: rgb(135, 255, 247);
+            box-shadow: 0px 0px 10px rgb(159, 253, 255);
+            transform: translate(-12px, -15px);
+            animation: ball2 infinite 5s ;
+        }
+        &-3 {
+            background: rgb(255, 255, 255);
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+            transform: translate(-12px, -15px);
+            animation: ball3 infinite 5s ;
+        }
+    }
+}
+
+@keyframes ball1 {
+    to {
+        transform: translate(-250px, -150px) scale(10);
+        opacity: 0;
+    }
+}
+@keyframes ball2 {
+    to {
+        transform: translate(250px, -150px) scale(10);
+        opacity: 0;
+    }
+}
+@keyframes ball3 {
+    to {
+        transform: translate(0px, 200px) scale(10);
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .language {
+        width: 690px;
+    }
+    @keyframes ball1 {
+        to {
+            transform: translate(-220px, -130px) scale(7);
+            opacity: 0;
+        }
+    }
+    @keyframes ball2 {
+        to {
+            transform: translate(220px, -130px) scale(7);
+            opacity: 0;
+        }
+    }
+    @keyframes ball3 {
+        to {
+            transform: translate(0px, 170px) scale(7);
+            opacity: 0;
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    .language {
+        width: 690px;
+    }
+    @keyframes ball1 {
+        to {
+            transform: translate(-100px, -50px) scale(5);
+            opacity: 0;
+        }
+    }
+    @keyframes ball2 {
+        to {
+            transform: translate(75px, -55px) scale(5);
+            opacity: 0;
+        }
+    }
+    @keyframes ball3 {
+        to {
+            transform: translate(0px, 70px) scale(5);
+            opacity: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .language {
+        width: 330px;
+        margin: 30px auto;
+    }
+}
+
+.languageCards {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    & .card {
+        font-size: 1.1em;
+        margin: 20px;
+        width: 230px;
+        border: 2px $blue3 solid;
+        background: $blue-bg;
+        border-radius: 10px;
+        overflow: hidden;
+
+        ul {
+            padding-right: 5px;
+        }
+
+        h3 {
+            //$clr1: rgb(73, 185, 255);
+            //$clr2: rgb(142, 255, 182);
+            //background: linear-gradient(to right, $clr1, $clr2);
+            background: $blue3;
+            text-align: center;
+            color: $blue;
+            padding: 15px;
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .languageCards {
+        & .card {
+            font-size: 0.9em;
+            width: 130px;
+        }
+    }
+}
+
+
+
+.backTitre {
+    color: white;
+    background: $blue-bg;
+    font-size: 1.1em;
+    text-align: center;
+
+    border-top: 3px solid $blue3;
+    width: 40%;
+    padding-top: 10px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+@media screen and (max-width: 700px) {
+    .backTitre {
+        font-size: 0.95em;
+        width: 90%;
+    }
+}
+
+.portfolio {
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    width: 95%;
+    position: relative;
+    z-index: 3;
+
+    & .liste {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    & .app {
+        width: 570px;
+        height: 430px;
+        display: flex;
+        margin: 10px;
+
+        background: $gray;
+        color: $white;
+        border-radius: 20px;
+        border: 2px solid $white;
+
+        transition: transform 0.3s;
+
+        &:hover {
+            $clr1: rgba(125, 214, 255, 0.721);
+            $clr2: rgba(164, 255, 196, 0.726);
+            background: linear-gradient(to right, $clr1, $clr2);
+            color: $blue;
+            cursor: pointer;
+        }
+
+        &__txt {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                font-size: 3em;
+                margin: 0;
+            }
+            p {
+                font-size: 1.1em;
+                max-width: 90%;
+                text-align: center;
+            }
+        }
+
+        &__img {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 85%;
+                height: 85%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    & .options {
+        position: relative;
+        left: -300px;
+        top: 50px;
+        z-index: 1;
+
+        svg {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: dash 5s linear forwards;
+
+            position: absolute;
+        }
+
+        .btn {
+            background: white;
+            position: absolute;
+            width: 100px;
+            left: 50px;
+            top: 20px;
+            animation: btn 0.3s 0.5s both;
+            text-align: center;
+        }
+        .btn:last-of-type {
+            top: 170px;
+        }
+
+        @keyframes dash {
+            to {
+              stroke-dashoffset: 0;
+            }
+        }
+        @keyframes btn {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .portfolio {
+        & .app {
+            height: 350px;
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    .portfolio {
+        & .app {
+            width: 90%;
+            height: 270px;
+            z-index: 3;
+            &__txt {
+                h3 {
+                    font-size: 1.5em;
+                }
+                p {
+                    font-size: 0.9em;
+                }
+            }
+        }
+        & .options {
+            left: -190px;
+            top: 20px;
+            z-index: 1;
+
+            button {
+                font-size: 0.9em;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+.messageBox {
+    position: fixed;
+    top: 0;
+    z-index: 30;
+    width: 100%;
+    background: $green;
+    background: url("./assets/bg-message.svg");
+    background-size: 100%;
+    color: white;
+    padding: 15px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    animation: messageBoxOn 0.3s both;
+    & .txt {
+        width: 70%;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        min-width: 400px;
+        max-width: 90%;
+
+        input {
+            margin: 5px 0;
+        }
+
+        button {
+            background: $green;
+            color: white;
+            border-width: 2px;
+            &:hover {
+                background: $white;
+                border-color: $white;
+                color: $green;
+            }
+        }
+
+        textarea {
+            height: 100px;
+            margin: 10px 0;
+        }
+    }
+
+    @keyframes messageBoxOn {
+        from {
+            transform: translateY(-100%);
+        }
+    }
+    @keyframes messageBoxOff {
+        to {
+            transform: translateY(-100%);
+        }
+    }
+}
