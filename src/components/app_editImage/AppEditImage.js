@@ -1,12 +1,12 @@
-import React from 'react';
 import { useState } from 'react';
 import Buttons from './settings/Buttons';
 import Previsu from './Previsu'
-import { useEffect } from 'react';
 import BigImage from './BigImage';
 import Settings from './settings/Settings';
 import Filter from './settings/Filter';
 import Size from './settings/Size';
+import Header from '../Header';
+import Footer from '../Footer';
 
 const AppEditImage = () => {
 
@@ -31,29 +31,33 @@ const AppEditImage = () => {
 
 
   return (
-    <div className='appEditImage'>
-      <h1>Retouche Image</h1>
+    <>
+      <Header />
+        <div className='appEditImage'>
+          <h1>Retouche Image</h1>
 
-      <div className='main-cont '>
-          <section className='main '>
-              <div className={mainPosition ? "main__elem main--detached" : "main__elem"}>
-                  <i className=" detached-icon fa-solid fa-arrow-up-right-from-square" onClick={()=>setMainPosition(!mainPosition)}></i>
-                  <Buttons mode={mode} setMode={setMode} />
-                  {mode == "réglages" && <Settings settings={settings} setSettings={setSettings} />}
-                  {mode == "filtres" && <Filter filter={filter} setFilter={setFilter} />}
-                  {mode == "taille" && <Size size={size} setSize={setSize} />}
-              </div>
+          <div className='main-cont '>
+              <section className='main '>
+                  <div className={mainPosition ? "main__elem main--detached" : "main__elem"}>
+                      <i className=" detached-icon fa-solid fa-arrow-up-right-from-square" onClick={()=>setMainPosition(!mainPosition)}></i>
+                      <Buttons mode={mode} setMode={setMode} />
+                      {mode == "réglages" && <Settings settings={settings} setSettings={setSettings} />}
+                      {mode == "filtres" && <Filter filter={filter} setFilter={setFilter} />}
+                      {mode == "taille" && <Size size={size} setSize={setSize} />}
+                  </div>
 
-              <div className='main__elem'>
-                  <Previsu imageSrc={imageSrc}  setImageSrc={setImageSrc} setSize={setSize} size={size} settings={settings}/>
-              </div>
-          </section>
-      </div>
+                  <div className='main__elem'>
+                      <Previsu imageSrc={imageSrc}  setImageSrc={setImageSrc} setSize={setSize} size={size} settings={settings}/>
+                  </div>
+              </section>
+          </div>
 
-      {
-        imageSrc && <BigImage imageSrc={imageSrc} size={size} settings={settings} filter={filter} />
-      }
-    </div>
+          {
+            imageSrc && <BigImage imageSrc={imageSrc} size={size} settings={settings} filter={filter} />
+          }
+        </div>
+      <Footer />
+    </>
   );
 };
 
