@@ -1,21 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import GoogleMapReact from "google-map-react";
 import axios from 'axios';
+import { fireballData } from './data';
 
 const Map = () => {
 
     const coord = { lat: 50, lng: 0 }
-    const [data, setData] = useState()
+    //const [data, setData] = useState() //use when you want fetch data on api
+    const data = fireballData
     const [filterValue, setFilterValue] = useState("2022")
 
-    const getData = () => {
+/*     const getData = () => {
         axios
         .get(`https://ssd-api.jpl.nasa.gov/fireball.api`)
         .then((res) => {
             let data = res.data.data
             setData(data)
         })
-    }
+    } */
 
     const filter = (fireball) => {
         let date = fireball[0].slice(0,4)
@@ -59,7 +61,7 @@ const Map = () => {
     }
 
     useEffect(() => {
-        getData()
+       // getData()
     }, [])
 
     return (
@@ -88,7 +90,7 @@ const Map = () => {
                     </div>
                 </div>
                 <GoogleMapReact
-                    bootstrapURLKeys={{key: process.env.NEXT_PUBLIC_MAP_KEY}}
+                    bootstrapURLKeys={{key: process.env.REACT_APP_MAP_KEY}}
                     defaultCenter={coord}
                     center={coord}
                     defaultZoom={2}

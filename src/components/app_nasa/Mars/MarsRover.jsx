@@ -9,7 +9,7 @@ import axios from "axios"
 const MarsRover = () => {
 
     const [listSelected, setListSelected] = useState() //front rear mast
-    const apiKey = process.env.NEXT_PUBLIC_NASA_KEY
+    const apiKey = process.env.REACT_APP_NASA_KEY
     
     const [cam1Data, setCam1Data] = useState([])
     const [cam2Data, setCam2Data] = useState([])

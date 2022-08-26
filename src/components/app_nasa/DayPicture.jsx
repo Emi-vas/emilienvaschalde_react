@@ -7,7 +7,7 @@ const DayPicture = () => {
 
     useEffect(() => {
         let date = new Date().toLocaleString().slice(0, 10)
-        let nasaApiKey = process.env.NEXT_PUBLIC_NASA_KEY
+        let nasaApiKey = process.env.REACT_APP_NASA_KEY
         let nasa_dayPicture = sessionStorage.getItem('nasa_dayPicture')
 
         const getData = () => {
