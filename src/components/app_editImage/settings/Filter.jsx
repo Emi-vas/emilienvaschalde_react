@@ -3,7 +3,7 @@ import React from 'react';
 const Filter = ({ filter, setFilter }) => {
     return (
         <div className='settings'>
-            <h2>Filtre</h2>
+            <h2>Filtres</h2>
             <div className='settings--filter'>
                 <div className='bloc1'>
                     <label>Effet miroire</label>

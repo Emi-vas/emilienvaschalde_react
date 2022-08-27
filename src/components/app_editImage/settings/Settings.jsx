@@ -3,7 +3,7 @@ import React from 'react';
 const Settings = ({settings, setSettings}) => {
     return (
         <div className='settings'>
-            <h2>Settings</h2>
+            <h2>Réglages</h2>
             <div className='settings--settings'>
                 <div className='blocBigInput'>
                     <label >Luminosité</label>
