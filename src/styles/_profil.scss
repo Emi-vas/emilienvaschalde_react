@@ -454,6 +454,7 @@
 
     form {
         display: flex;
+        display: none;
         flex-direction: column;
         min-width: 400px;
         max-width: 90%;
@@ -488,5 +489,10 @@
         to {
             transform: translateY(-100%);
         }
+    }
+}
+@media screen and (max-width: 700px) {
+    .messageBox {
+        font-size: 0.75em
     }
 }
