@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import Map from './fireBall/Map';
-import DayPicture from './DayPicture';
-import VideoEarth from './VideoEarth';
-import MarsRover from './Mars/MarsRover';
-import Header from '../Header';
-import Footer from '../Footer';
+import Map from '../components/app_nasa/fireBall/Map';
+import DayPicture from '../components/app_nasa/DayPicture';
+import VideoEarth from '../components/app_nasa/VideoEarth';
+import MarsRover from '../components/app_nasa/Mars/MarsRover';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const AppNasa = () => {
     

@@ -18,7 +18,7 @@ const Backend = () => {
 
     return (
         <>
-            <div className='backTitre'>Je ne suis pas développeur backend, <br /> mais voilà quelques languages back que j&apos  ai été amené à utiliser</div>
+            <div className='backTitre'>Je ne suis pas développeur backend, <br /> mais voici quelques langages back que j'ai été amené à utiliser</div>
             <div className="languageCards">
             {
                 listeCards.map((card, index) => (

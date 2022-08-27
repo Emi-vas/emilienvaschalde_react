@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
-import Buttons from './settings/Buttons';
-import Previsu from './Previsu'
-import BigImage from './BigImage';
-import Settings from './settings/Settings';
-import Filter from './settings/Filter';
-import Size from './settings/Size';
-import Header from '../Header';
-import Footer from '../Footer';
+import Buttons from '../components/app_editImage/settings/Buttons';
+import Previsu from '../components/app_editImage/Previsu'
+import BigImage from '../components/app_editImage/BigImage';
+import Settings from '../components/app_editImage/settings/Settings';
+import Filter from '../components/app_editImage/settings/Filter';
+import Size from '../components/app_editImage/settings/Size';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const AppEditImage = () => {
 

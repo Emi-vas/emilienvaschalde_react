@@ -2,8 +2,8 @@ import ReactDOM from 'react-dom/client';
 import Home from './pages/Home';
 import './styles/style.scss'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import AppEditImage from './components/app_editImage/AppEditImage';
-import AppNasa from './components/app_nasa/AppNasa'
+import AppEditImage from './pages/AppEditImage';
+import AppNasa from './pages/AppNasa'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
