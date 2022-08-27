@@ -33,9 +33,8 @@ const AppEditImage = () => {
   return (
     <>
       <Header />
+        <h1>Retouche Image</h1>
         <div className='appEditImage'>
-          <h1>Retouche Image</h1>
-
           <div className='main-cont '>
               <section className='main '>
                   <div className={mainPosition ? "main__elem main--detached" : "main__elem"}>

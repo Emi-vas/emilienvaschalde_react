@@ -6,7 +6,7 @@ const Settings = ({settings, setSettings}) => {
             <h2>Settings</h2>
             <div className='settings--settings'>
                 <div className='blocBigInput'>
-                    <label >Luminosité : </label>
+                    <label >Luminosité</label>
                     <input 
                         onChange={(e) => setSettings({...settings, brightness: parseInt(e.target.value)})} 
                         type="range" 
@@ -15,7 +15,7 @@ const Settings = ({settings, setSettings}) => {
                     <i className="fa-solid fa-arrows-rotate" onClick={()=> setSettings({...settings, brightness: 100})}></i>
                 </div>
                 <div className='blocBigInput'>
-                    <label >Contraste : </label>
+                    <label >Contraste</label>
                     <input 
                         onChange={(e) => setSettings({...settings, contrast: parseInt(e.target.value)})} 
                         type="range" 
@@ -24,7 +24,7 @@ const Settings = ({settings, setSettings}) => {
                     <i className="fa-solid fa-arrows-rotate" onClick={()=> setSettings({...settings, contrast: 100})}></i>
                 </div>
                 <div className='blocBigInput'>
-                    <label >Saturation : </label>
+                    <label >Saturation</label>
                     <input 
                         onChange={(e) => setSettings({...settings, saturate: parseInt(e.target.value)})} 
                         type="range" 
@@ -33,7 +33,7 @@ const Settings = ({settings, setSettings}) => {
                     <i className="fa-solid fa-arrows-rotate" onClick={()=> setSettings({...settings, saturate: 100})}></i>
                 </div>
                 <div className='blocBigInput'>
-                    <label >Couleur : </label>
+                    <label >Couleur</label>
                     <input 
                         onChange={(e) => setSettings({...settings, color: parseInt(e.target.value)})} 
                         type="range" 
