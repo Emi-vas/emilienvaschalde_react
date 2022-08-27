@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Buttons from './settings/Buttons';
 import Previsu from './Previsu'
 import BigImage from './BigImage';
@@ -28,7 +28,9 @@ const AppEditImage = () => {
   //to change the position of the main bloc
   const [mainPosition, setMainPosition] = useState(false)
 
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
 
   return (
     <>

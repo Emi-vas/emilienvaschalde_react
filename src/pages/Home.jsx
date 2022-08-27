@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from "../components/Header"
 import LanguageCards from "../components/profile/LanguageCards"
 import Backend from "../components/profile/Backend"
@@ -6,6 +6,11 @@ import Portfolio from "../components/profile/Portfolio"
 import Footer from "../components/Footer"
 
 const Home = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <div>
             <Header />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Map from './fireBall/Map';
 import DayPicture from './DayPicture';
 import VideoEarth from './VideoEarth';
@@ -7,6 +7,11 @@ import Header from '../Header';
 import Footer from '../Footer';
 
 const AppNasa = () => {
+    
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <div>
             <Header />
