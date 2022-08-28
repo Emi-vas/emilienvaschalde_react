@@ -1,6 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Filter = ({ filter, setFilter }) => {
+    //-- Bloc scrolling when user use a fadder
+    const [blocScroll, setBlocScroll] = useState(true)
+    let timer
+
+    const scrollOff = () => {
+        if(window.innerWidth < 700) {
+            document.querySelector('html').style.overflowY = "hidden"
+            clearTimeout(timer) 
+            if(blocScroll) {
+                timer = setTimeout(() => {
+                    setBlocScroll(true)
+                    document.querySelector('html').style.overflowY = "scroll"
+                }, 300)
+            }
+            setBlocScroll(false)
+        }
+    }
+    //-- End bloc scrolling
     return (
         <div className='settings'>
             <h2>Filtres</h2>
@@ -32,6 +50,7 @@ const Filter = ({ filter, setFilter }) => {
                     <label >Effet vieilli : </label>
                     <input 
                         onChange={(e) => setFilter({...filter, sepia: parseInt(e.target.value)})} 
+                        onInput={scrollOff}
                         type="range" 
                         min={0} max={100} 
                         value={filter.sepia} />
@@ -42,6 +61,7 @@ const Filter = ({ filter, setFilter }) => {
                     <label >Arrondi : </label>
                     <input 
                         onChange={(e) => setFilter({...filter, border: parseInt(e.target.value)})} 
+                        onInput={scrollOff}
                         type="range" 
                         min={0} max={50} 
                         value={filter.border} />
@@ -52,6 +72,7 @@ const Filter = ({ filter, setFilter }) => {
                     <label >Flou : </label>
                     <input 
                         onChange={(e) => setFilter({...filter, blur: parseInt(e.target.value)})} 
+                        onInput={scrollOff}
                         type="range" 
                         min={0} max={10} 
                         value={filter.blur} />

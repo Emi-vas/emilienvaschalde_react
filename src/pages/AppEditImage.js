@@ -38,7 +38,7 @@ const AppEditImage = () => {
         <h1>Retouche Image</h1>
         <div className='appEditImage'>
           <div className='main-cont '>
-              <section className='main '>
+              <section className='main ' onClick={() => console.log('win')}>
                   <div className={mainPosition ? "main__elem main--detached" : "main__elem"}>
                       <i className=" detached-icon fa-solid fa-arrow-up-right-from-square" onClick={()=>setMainPosition(!mainPosition)}></i>
                       <Buttons mode={mode} setMode={setMode} />
@@ -47,7 +47,7 @@ const AppEditImage = () => {
                       {mode == "taille" && <Size size={size} setSize={setSize} />}
                   </div>
 
-                  <div className='main__elem'>
+                  <div className='main__elem' >
                       <Previsu imageSrc={imageSrc}  setImageSrc={setImageSrc} setSize={setSize} size={size} settings={settings}/>
                   </div>
               </section>
