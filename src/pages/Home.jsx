@@ -4,6 +4,7 @@ import LanguageCards from "../components/profile/LanguageCards"
 import Backend from "../components/profile/Backend"
 import Portfolio from "../components/profile/Portfolio"
 import Footer from "../components/Footer"
+import Portfolio2 from '../components/profile/Portfolio2';
 
 const Home = () => {
 
@@ -45,6 +46,7 @@ const Home = () => {
             <Backend />
 
             <Portfolio />
+            <Portfolio2 />
 
             <Footer />
         </div>

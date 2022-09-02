@@ -496,3 +496,68 @@
         font-size: 0.75em
     }
 }
+
+.portfolio2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+
+    & .card {
+        width: 500px;
+        max-width: 85%;
+        background: $gray;
+        color: $white;
+        border-radius: 3px;
+        border: 1px solid $white;
+
+        img {
+            width: 100%;
+        }
+
+        h3 {
+            font-size: 2em;
+            margin: 0;
+            padding-left: 30px;
+        }
+
+        & .txt {
+            padding: 15px;
+        }
+
+        & .buttons-bloc {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            text-align: center;
+
+            a {
+                width: 50%;
+                background: white;
+                padding: 15px;
+                color: $blue;
+                &:hover {
+                    background: transparent;
+                    color: white;
+                }
+            }
+
+            a:first-of-type {
+                border-right: 2px $gray solid;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .portfolio2 {
+        & .card {
+            font-size: 0.8em;
+            h4 {
+                font-size: 1.7em;
+            }
+        }
+    }
+}
