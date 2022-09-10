@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from "../components/Header"
 import LanguageCards from "../components/profile/LanguageCards"
 import Backend from "../components/profile/Backend"
@@ -7,7 +7,6 @@ import Footer from "../components/Footer"
 import Portfolio2 from '../components/profile/Portfolio2';
 
 const Home = () => {
-
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
@@ -46,7 +45,7 @@ const Home = () => {
             <Backend />
 
             <Portfolio />
-            <Portfolio2 />
+            <Portfolio2/>
 
             <Footer />
         </div>
