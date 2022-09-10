@@ -24,7 +24,7 @@ const Portfolio2 = () => {
             git: "https://github.com/Emi-vas/FitnessApp_react"
         },
         {
-            title : "NFTCrypto",
+            title : "NFT Crypto",
             img : "/assets/img/app5.jpg",
             desc: "Application suivi crypto monnaie",
             languages : ["React Native","Expo"],

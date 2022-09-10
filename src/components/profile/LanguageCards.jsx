@@ -3,11 +3,11 @@ const languageCards = () => {
     const listeCards = [
         {
             titre : "JAVASCRIPT",
-            liste : ["React JS", "Redux", "Next JS", "Vanilla JS"]
+            liste : ["React JS", "Redux", "Next JS", "React native"]
         },
         {
             titre : "CSS",
-            liste : ["Sass","Tailwind"]
+            liste : ["Sass","Tailwind", "Material-UI"]
         }
     ]
 

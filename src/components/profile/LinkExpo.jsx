@@ -16,19 +16,18 @@ const LinkExpo = ({QRurl, setDisplayLinkExpo}) => {
                 bottom: 0,
                 right: 0,
                 left: 0,
-                backgroundColor: 'rgba(50, 91, 117, 0.9)',
+                backgroundColor: 'rgba(50, 91, 117, 0.95)',
                 zIndex: 3,
 
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                justifyContent: "flex-start",
+                justifyContent: "center",
 
-                paddingBottom: "300px"
             }}
         >
 
-            <h2>Pour acceder à l'application :</h2>
+            <h3 style={{ fontWeight: "300", letterSpacing: "0.1em", fontSize: "2.3em" }}>Pour acceder à l'application :</h3>
             <ol
                 style={{ fontSize: "1.1em" }}
             >
