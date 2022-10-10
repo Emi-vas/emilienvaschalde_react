@@ -35,7 +35,7 @@ const LinkExpo = ({QRurl, setDisplayLinkExpo}) => {
                 <li>Scannez le QR code :</li>
             </ol>
 
-            <img src={QRurl} alt="qr code de l'application" style={{ width: "300px", height: "300px" }} />
+            <img src={QRurl} alt="qr code de l'application" style={{ width: "250px", height: "250px" }} />
 
             <div
                 onClick={handeClose}

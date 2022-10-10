@@ -8,12 +8,20 @@ const Portfolio2 = () => {
 
     const listeApp = [
         {
-            title : "YoutubeLike",
-            img : "/assets/img/app3.png",
-            desc: "Application avec utilisation de l'api youtube.",
-            languages : ["React JS", "Material UI"],
-            link: {type: "web", url: "https://630dce83cfd2db23e233edaa--wondrous-praline-b1b0c0.netlify.app/"},
-            git: "https://github.com/Emi-vas/YoutubeLike_React"
+            title : "Movies & Series",
+            img : "/assets/img/app7.jpg",
+            desc: "Application web de recherche de films et series. ",
+            languages : ["UI Design", "React","Typescript"],
+            link: {type: "web", url: "https://gentle-manatee-39b5d2.netlify.app/"},
+            git: "https://github.com/Emi-vas/Movies-Series_TypeScript"
+        },
+        {
+            title : "Fitness (mobile)",
+            img : "/assets/img/app6.jpg",
+            desc: "Application fitness en version react native",
+            languages : ["React Native","Expo", "React Navigation"],
+            link: {type: "tel", url: "/assets/img/app6_qr.jpg"},
+            git: "https://github.com/Emi-vas/FitnessApp_reactNative"
         },
         {
             title : "Fitness",
@@ -30,6 +38,14 @@ const Portfolio2 = () => {
             languages : ["React Native","Expo"],
             link: {type: "tel", url: "/assets/img/app5_qr.jpg"},
             git: "https://github.com/Emi-vas/NFT_reactNative/blob/main/App.js"
+        },
+        {
+            title : "YoutubeLike",
+            img : "/assets/img/app3.png",
+            desc: "Application avec utilisation de l'api youtube.",
+            languages : ["React JS", "Material UI"],
+            link: {type: "web", url: "https://630dce83cfd2db23e233edaa--wondrous-praline-b1b0c0.netlify.app/"},
+            git: "https://github.com/Emi-vas/YoutubeLike_React"
         },
     ]
 

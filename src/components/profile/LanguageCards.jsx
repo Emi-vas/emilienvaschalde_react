@@ -7,7 +7,7 @@ const languageCards = () => {
         },
         {
             titre : "CSS",
-            liste : ["Sass","Tailwind", "Material-UI"]
+            liste : ["Styled Components","Sass","Tailwind", "Material-UI"]
         }
     ]
 
