@@ -17,10 +17,10 @@ const Portfolio = () => {
         },
         {
             title : "App 2",
-            desc : "Application de dialogue avec l'api publique de la NASA",
+            desc : "Application web de recherche de films et series.",
             img : "./assets/img/app2.jpg",
-            link : "./nasa-app",
-            git: "https://github.com/Emi-vas/nasaApp"
+            link : "https://gentle-manatee-39b5d2.netlify.app/",
+            git: "https://github.com/Emi-vas/Movies-Series_TypeScript"
         },
     ]
 
@@ -68,7 +68,8 @@ const Portfolio = () => {
                                 <div className="options">
                                     <From1 />
                                     <Form2 />
-                                    <NavLink to={app.link} className="btn">Voir l'app</NavLink>
+                                    { app.title == "App 1" && <NavLink to={app.link} className="btn">Voir l'app</NavLink> }
+                                    { app.title == "App 2" && <a href={app.link} className="btn">Voir l'app</a> }
                                     <a href={app.git} className="btn" target="blank">GIT</a>
                                 </div>
                             }

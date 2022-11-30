@@ -34,11 +34,11 @@ const Header = ({ cate}) => {
                     <p>APP 1</p>
                     <p>retouche image</p>
                 </NavLink>
-                <NavLink to="/nasa-app" className={cate == "nasa" ? "lien lien--actif" : "lien"}>
-                    <i className="fa-solid fa-earth-americas"></i>
+                <a className="lien" href="https://gentle-manatee-39b5d2.netlify.app/">
+                    <i class="fa-solid fa-film"></i>
                     <p>APP 2</p>
-                    <p>Nasa api</p>
-                </NavLink>
+                    <p>Movies & Series</p>
+                </a>
 
                 <div onClick={handleMessage} className={displayMessageBox ? "lien lien--actif" : "lien"}>
                     <i className="fa-solid fa-comment"></i>
