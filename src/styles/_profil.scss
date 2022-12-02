@@ -299,6 +299,10 @@
         flex-wrap: wrap;
     }
 
+    & .app_cont{
+        display: flex;
+    }
+
     & .app {
         width: 570px;
         height: 430px;

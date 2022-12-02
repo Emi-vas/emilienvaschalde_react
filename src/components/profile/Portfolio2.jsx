@@ -46,16 +46,16 @@ const Portfolio2 = () => {
             <h2 className='h2-small'>Autres applications React</h2>
             <div className='portfolio2'>
             {
-                listeApp.map((app) => (
-                    <div className='card'>
+                listeApp.map((app, index) => (
+                    <div className='card' key={index}>
                         <img src={app.img} alt="" />
                         <div className='txt'>
                             <h3>{app.title}</h3>
                             <p>{app.desc}</p>
                             <ul>
                                 {
-                                    app.languages.map((language) => (
-                                        <li>{language}</li>
+                                    app.languages.map((language, index) => (
+                                        <li key={index}>{language}</li>
                                     ))
                                 }
                             </ul>

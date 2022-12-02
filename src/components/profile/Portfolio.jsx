@@ -17,9 +17,9 @@ const Portfolio = () => {
         },
         {
             title : "App 2",
-            desc : "Application web de recherche de films et series.",
+            desc : "Application web de films et series.",
             img : "./assets/img/app2.jpg",
-            link : "https://gentle-manatee-39b5d2.netlify.app/",
+            link : "https://gentle-manatee-39b5d2.netlify.app/?ud=y",
             git: "https://github.com/Emi-vas/Movies-Series_TypeScript"
         },
     ]
@@ -38,19 +38,8 @@ const Portfolio = () => {
             <div className="liste">
                 {
                     appListe.map((app, index) => (
-                        
-/*                     <Link href={app.link} key={index} onClick={clickApp}><a className="app" >
-                            <div className="app__txt">
-                                <h3>{app.title}</h3>
-                                <p>{app.desc}</p>
-                            </div>
-                            <div className="app__img">
-                                <img src={app.img} alt={app.desc + ", Emilien Vaschalde développeur web"} />
-                            </div>
-                        </a></Link> */
-                        <>
+                        <div key={index} className="app_cont">
                             <div  
-                            key={index} 
                             onClick={()=>clickApp(app.title)} 
                             style={{transform : appActive == app.title ? "scaleX(0.5) translateX(-50%)" : ""}} 
                             className="app">
@@ -69,11 +58,17 @@ const Portfolio = () => {
                                     <From1 />
                                     <Form2 />
                                     { app.title == "App 1" && <NavLink to={app.link} className="btn">Voir l'app</NavLink> }
-                                    { app.title == "App 2" && <a href={app.link} className="btn">Voir l'app</a> }
+                                    { 
+                                      app.title == "App 2" && 
+                                        <a 
+                                            href={app.link} 
+                                            className="btn"
+                                        >Voir l'app</a> 
+                                    }
                                     <a href={app.git} className="btn" target="blank">GIT</a>
                                 </div>
                             }
-                        </>
+                        </ div>
                     ))
                 }
             </div>

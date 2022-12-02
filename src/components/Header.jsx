@@ -34,8 +34,8 @@ const Header = ({ cate}) => {
                     <p>APP 1</p>
                     <p>retouche image</p>
                 </NavLink>
-                <a className="lien" href="https://gentle-manatee-39b5d2.netlify.app/">
-                    <i class="fa-solid fa-film"></i>
+                <a className="lien" href="https://gentle-manatee-39b5d2.netlify.app/?ud=y">
+                    <i className="fa-solid fa-film"></i>
                     <p>APP 2</p>
                     <p>Movies & Series</p>
                 </a>
