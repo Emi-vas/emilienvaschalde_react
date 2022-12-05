@@ -458,9 +458,8 @@
 
     form {
         display: flex;
-        display: none;
         flex-direction: column;
-        min-width: 400px;
+        width: 400px;
         max-width: 90%;
 
         input {
@@ -481,6 +480,19 @@
         textarea {
             height: 100px;
             margin: 10px 0;
+        }
+
+        & .infoBloc {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+                font-size: 2em;
+                margin: 7px 10px;
+            }
+            & .spinner {
+                animation: rotate infinite linear 1.3s;
+            }
         }
     }
 
