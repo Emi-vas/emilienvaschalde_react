@@ -14,11 +14,14 @@ const MessageBox = ({setDisplayMessageBox, displayMessageBox}) => {
     };
     
      useEffect(() => {
-        window.addEventListener('scroll', closeForm);
-        // cleanup this component
-        return () => {
-          window.removeEventListener('scroll', closeForm);
-        };
+        //only on desktop
+        if(window.innerWidth > 500) {
+            window.addEventListener('scroll', closeForm);
+            // cleanup this component
+            return () => {
+            window.removeEventListener('scroll', closeForm);
+            };
+        }
       }, []);
 
     return (

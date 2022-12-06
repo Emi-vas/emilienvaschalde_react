@@ -258,7 +258,8 @@
     .languageCards {
         & .card {
             font-size: 0.9em;
-            width: 130px;
+            width: 150px;
+            margin: 10px;
         }
     }
 }
@@ -460,7 +461,7 @@
         display: flex;
         flex-direction: column;
         width: 400px;
-        max-width: 90%;
+        max-width: 80%;
 
         input {
             margin: 5px 0;
@@ -509,7 +510,12 @@
 }
 @media screen and (max-width: 700px) {
     .messageBox {
-        font-size: 0.75em
+        h2 {
+            font-size: 1.7em;
+        } 
+        p {
+            font-size: 1.1em;
+        }
     }
 }
 
