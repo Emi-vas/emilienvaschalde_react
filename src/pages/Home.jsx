@@ -5,6 +5,7 @@ import Backend from "../components/profile/Backend"
 import Portfolio from "../components/profile/Portfolio"
 import Footer from "../components/Footer"
 import Portfolio2 from '../components/profile/Portfolio2';
+import TopSection from '../components/profile/TopSection';
 
 const Home = () => {
     useEffect(() => {
@@ -14,14 +15,7 @@ const Home = () => {
     return (
         <div>
             <Header />
-            <div className='head'>
-                <h1>Développeur WEB</h1>
-                <h2>Emilien VASCHALDE</h2>
-                <div className='bottom'>
-                    <img src="./assets/img/head2.svg" alt="svg décoration" />
-                    <img src="./assets/img/head1.svg" alt="svg décoration" />
-                </div>
-            </div>
+            <TopSection />
 
             <div className='section1'>
                 <div className='photo_profile'>

@@ -1,7 +1,13 @@
 .head {
-    background: #c5d9ee;
     padding-top: 20px;
     margin-bottom: 300px;
+    overflow: hidden;
+    position: relative;
+
+    background-size: 100%;
+    background-position: 100% 90%;
+
+    height: 550px;
     h1 {
         color: rgb(35, 101, 148);
         font-size: 3.3em;
@@ -10,6 +16,11 @@
         color: rgb(82, 131, 166);
         font-size: 1.5em;
         margin-bottom: 0;
+    }
+    .video {
+        position: absolute;
+        transform: translateY(-190px);
+        object-fit: cover;
     }
     & .bottom {
         position: relative;
@@ -21,6 +32,21 @@
         img:last-of-type {
             top: -3px;
         }
+    }
+    .form1 {
+        position: absolute;
+        z-index: 2;
+        bottom: -3px;
+        left: -2px;
+        right: 5px;
+        width: 105%;
+    }
+    .form2 {
+        position: absolute;
+        bottom: 3px;
+        left: -2px;
+        right: 5px;
+        width: 105%;
     }
 }
 @media screen and (max-width: 1100px) {
