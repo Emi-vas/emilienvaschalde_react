@@ -8,6 +8,14 @@ const Portfolio2 = () => {
 
     const listeApp = [
         {
+            title : "Movies & Series",
+            img : "/assets/img/app7.jpg",
+            desc: "Application fitness en version react native",
+            languages : ["React JS", "Redux", "Styled Components"],
+            link: {type: "web", url: "https://gentle-manatee-39b5d2.netlify.app/?ud=y"},
+            git: "https://github.com/Emi-vas/Movies-Series_TypeScript"
+        },
+        {
             title : "Fitness (mobile)",
             img : "/assets/img/app6.jpg",
             desc: "Application fitness en version react native",

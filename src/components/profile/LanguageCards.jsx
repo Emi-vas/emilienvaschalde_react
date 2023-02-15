@@ -3,7 +3,7 @@ const languageCards = () => {
     const listeCards = [
         {
             titre : "JAVASCRIPT",
-            liste : ["React JS", "Redux", "Next JS", "React native"]
+            liste : ["React JS", "React Testing", "Redux", "Next JS", "React native"]
         },
         {
             titre : "CSS",

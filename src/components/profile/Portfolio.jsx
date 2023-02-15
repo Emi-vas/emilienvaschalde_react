@@ -17,10 +17,10 @@ const Portfolio = () => {
         },
         {
             title : "App 2",
-            desc : "Application web de films et series.",
+            desc : "Boutique en ligne avec outil d'aide au choix d'achat",
             img : "./assets/img/app2.jpg",
-            link : "https://gentle-manatee-39b5d2.netlify.app/?ud=y",
-            git: "https://github.com/Emi-vas/Movies-Series_TypeScript"
+            link : "https://guitare-passion.netlify.app/",
+            git: "https://github.com/Emi-vas/guitare-passion"
         },
     ]
 
