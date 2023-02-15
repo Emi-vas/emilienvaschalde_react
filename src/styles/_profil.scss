@@ -1,6 +1,5 @@
 .head {
     padding-top: 20px;
-    margin-bottom: 300px;
     overflow: hidden;
     position: relative;
 
@@ -8,14 +7,19 @@
     background-position: 100% 90%;
 
     height: 550px;
+
+    h1, h2 {
+        color: white;
+        z-index: 4;
+    }
     h1 {
-        color: rgb(35, 101, 148);
         font-size: 3.3em;
+        position: relative;
     }
     h2 {
-        color: rgb(82, 131, 166);
         font-size: 1.5em;
         margin-bottom: 0;
+        position: relative;
     }
     .video {
         position: absolute;
@@ -36,22 +40,39 @@
     .form1 {
         position: absolute;
         z-index: 2;
-        bottom: -3px;
+        bottom: -7px;
         left: -2px;
         right: 5px;
         width: 105%;
     }
     .form2 {
         position: absolute;
-        bottom: 3px;
+        bottom: -3px;
         left: -2px;
         right: 5px;
         width: 105%;
     }
-}
-@media screen and (max-width: 1100px) {
-    .head {
-        margin-bottom: 150px;
+
+    @media screen and (max-width : 800px) {
+       
+        height: 400px;
+
+    }
+    @media screen and (max-width : 680px) {
+        height: 300px;
+        background-size: 150%;
+        background-position: 70% 100%;
+       
+        .header_form2 {
+            position: absolute;
+            bottom: 0px;
+            left: -2px;
+            right: 5px;
+            width: 105%;
+        }
+        .video {
+            transform: translateY(-250px);
+        }
     }
 }
 @media screen and (max-width: 700px) {
@@ -90,7 +111,7 @@
         color: $white;
         font-size: 1.5em;
         text-align: center;
-        background: rgb(14, 42, 71, 0.9);
+        //background: rgb(14, 42, 71, 0.9);
         span {
             color: $blue3;
             font-size: 1.8em;
