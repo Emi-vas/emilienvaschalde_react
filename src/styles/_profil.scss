@@ -89,11 +89,14 @@
 }
 
 .section1 {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 70%;
     margin: auto;
+    transform: translateY(-90px);
+    z-index: 5;
     .photo_profile {
         background: #c5d9ee;
         border-radius: 54% 46% 78% 22% / 50% 47% 53% 50% ;
@@ -141,6 +144,7 @@
 }
 @media screen and (max-width: 700px) {
     .section1 {
+        transform: translateY(0);
         font-size: 0.7em;
         .photo_profile {
             img {
