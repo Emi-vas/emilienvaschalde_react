@@ -20,7 +20,7 @@ const Portfolio2 = () => {
             img : "/assets/img/app6.jpg",
             desc: "Application fitness en version react native",
             languages : ["React Native","Expo", "React Navigation"],
-            link: {type: "tel", url: "/assets/img/app6_qr.jpg"},
+            link: {type: "tel", url: "https://www.youtube.com/embed/jV5oCSAywFk"},
             git: "https://github.com/Emi-vas/FitnessApp_reactNative"
         },
         {
@@ -36,7 +36,7 @@ const Portfolio2 = () => {
             img : "/assets/img/app5.jpg",
             desc: "Application suivi crypto monnaie",
             languages : ["React Native","Expo"],
-            link: {type: "tel", url: "/assets/img/app5_qr.jpg"},
+            link: {type: "tel", url: "https://www.youtube.com/embed/87IxN370lP0"},
             git: "https://github.com/Emi-vas/NFT_reactNative/blob/main/App.js"
         },
         {
@@ -90,7 +90,7 @@ const Portfolio2 = () => {
                         </div>
                         {
                             displayLinkExpo.state && displayLinkExpo.url == app.link.url &&
-                            <LinkExpo setDisplayLinkExpo={setDisplayLinkExpo} QRurl={app.link.url} />
+                            <LinkExpo setDisplayLinkExpo={setDisplayLinkExpo} videoUrl={app.link.url} />
                         }
                     </div>
                 ))

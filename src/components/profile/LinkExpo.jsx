@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LinkExpo = ({QRurl, setDisplayLinkExpo}) => {
+const LinkExpo = ({videoUrl, setDisplayLinkExpo}) => {
 
     const handeClose = () => {
         document.querySelector('html').style.overflowY = "scroll"
@@ -10,6 +10,7 @@ const LinkExpo = ({QRurl, setDisplayLinkExpo}) => {
 
     return (
         <div
+            className='appMobile'
             style={{
                 position: "fixed",
                 top: 0,
@@ -26,17 +27,14 @@ const LinkExpo = ({QRurl, setDisplayLinkExpo}) => {
 
             }}
         >
-
-            <h3 style={{ fontWeight: "300", letterSpacing: "0.1em", fontSize: "2.3em" }}>Pour acceder à l'application :</h3>
-            <ol
-                style={{ fontSize: "1.1em" }}
-            >
-                <li>Telechargez l'application : <strong>Expo Go</strong></li>
-                <li>Scannez le QR code :</li>
-            </ol>
-
-            <img src={QRurl} alt="qr code de l'application" style={{ width: "250px", height: "250px" }} />
-
+            <iframe 
+               
+                src={videoUrl}
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen
+            ></iframe>
             <div
                 onClick={handeClose}
                 style={{
